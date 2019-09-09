@@ -8,8 +8,7 @@ import java.util.NoSuchElementException;
 
 
 public class Oblig1 {
-    private Oblig1() {
-    }
+  
 
     ///// Oppgave 1 //////////////////////////////////////
     public static int maks(int[] a) {
