@@ -69,19 +69,19 @@ public class Oblig1 {
     ///// Oppgave 3 //////////////////////////////////////
     public static int antallUlikeUsortert(int[] a) {
 
-        int teller = 0;                        // Hjelpevariabel som teller opp antall ulike heltall
+        int teller = 0;                       
 
-        for (int i = 0; i < a.length; i++) {   // Itererer igjennom hele int[] a
+        for (int i = 0; i < a.length; i++) {   
             boolean erUlik = false;
-            for (int j = 0; j < i; j++) {      // Itererer gjennom a[i] og a[j] samtidig
-                if (a[i] == a[j]) {            // Hvis a[i] og a[j] har sammme verdi setter vi
-                    erUlik = true;             // den boolske variabelen erUlike på true og hopper ut av
-                    break;                     // nåværende iterasjon og fortsetter videre på neste iterasjon
+            for (int j = 0; j < i; j++) {     
+                if (a[i] == a[j]) {            
+                    erUlik = true;            
+                    break;                    
                 }
             }
 
-            if (!erUlik) {                     // For hver iterasjon erUlik er satt til false
-                teller++;                      // plusser vi med 1 i teller
+            if (!erUlik) {                     
+                teller++;                      
             }
 
         }
